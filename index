@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  form(action='/auth/browserid', method='post', style='display: none;')
+    input(type='text', name='assertion')
+    
+    img.browserid(src='https://image.freepik.com/free-vector/login-template_1017-6719.jpg')
+    
