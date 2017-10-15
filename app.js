@@ -28,7 +28,7 @@ passport.deserializeUser(function(email, done) {
 //   credentials (in this case, a BrowserID verified email address), and invoke
 //   a callback with a user object.
 passport.use(new PersonaStrategy({
-    audience: (process.env.URL || 'http://127.0.0.1/wordpress/')
+    audience: (process.env.URL || 'http://127.0.0.1:8181/')
   },
   function(email, done) {
     return done(null, { email: email });
